@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>CodeBread</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <script src="js/site.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="img/bread.png">
+
+</head>
+<body class="code-snippets-visible">
+
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script>
+    window.onload = function() {
+      document.getElementById("message1").style.display = "none";
+      document.getElementById("message2").style.display = "none";
+      document.getElementById("message3").style.display = "none";
+      document.getElementById("message4").style.display = "none";
+
+
+
+      runMessages();
+    };
+
+
+    function runMessages() {
+      setTimeout(runMessage1, 1000)
+      setTimeout(runMessage2, 4000)
+      setTimeout(runMessage3, 7000)
+      setTimeout(runMessage4, 10000)
+    }
+    function runMessage1() {
+      document.getElementById("message1").style.display = "block";
+      document.getElementById("message1").innerHTML = "Welcome to BreadTown! I am King Mill, and I need your help!";
+    }
+    function runMessage2() {
+      document.getElementById("message2").style.display = "block";
+      document.getElementById("bread").src="img/sad_bread.png";
+      document.getElementById("message2").innerHTML = "We're in a <i>crumby</i> situation >.< ";
+    }
+    function runMessage3() {
+      document.getElementById("message3").style.display = "block";
+      document.getElementById("bread").src="img/angry_bread.png";
+      document.getElementById("message3").innerHTML = "Some of my code is wrong and I cannot make my sandwiches :( ";
+    }
+    function runMessage4() {
+      document.getElementById("message4").style.display = "block";
+      document.getElementById("bread").src="img/happy_bread.png";
+      document.getElementById("message4").innerHTML = "Can you help us?";
+    }
+    </script>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <div class="centerofpage">
+  <div class="container">
+    <div class="row">
+      <div class="three columns">
+        <img id="bread" src="img/normal_bread.png" alt="bread" class="u-max-full-width" >
+      </div>
+
+      <!-- The text message discussion
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="nine columns">
+        <p id="message1" class="message"></p>
+        <p id="message2" class="message"></p>
+        <p id="message3" class="message"></p>
+        <p id="message4" class="message"></p>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+    <!-- Nav bar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row centerelement">
+      <a class="button" href="index.html">Home</a>
+      <a class="button" href="aboutus.html">About us</a><br/>
+    </div>
+</div>
+</div>
+</body>
+</html>
